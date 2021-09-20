@@ -94,3 +94,7 @@ function giveMeSomething(str) {
 console.log(giveMeSomething("nhan"));
 
 //7 
+function points(p1, p2) {
+    return p1 * 2 + p2 * 3;
+}
+console.log(points(38,8))
