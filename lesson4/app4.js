@@ -117,3 +117,6 @@
 // nev(nums)
 
 
+// // Danh sách những người ban đầu
+// let peoples = ["Quang", "Mai", "Thiện", "Nhân", "Bảo", "Đức"];
+

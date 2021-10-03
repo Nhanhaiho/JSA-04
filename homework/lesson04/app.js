@@ -17,8 +17,14 @@ while (true) {
     }else if (input.toLocaleUpperCase() === "U") {
         let Updateposition = Number(prompt("Enter Update position? "));
         let NewItem = prompt('New item?');
-        clothes.splice(Updateposition-1, 1, `${NewItem}`);
+        let value = clothes[Updateposition];
+        if (value !== undefined) {
+              clothes.splice(Updateposition-1, 1, `${NewItem}`);
         console.log(printClothes(clothes));
+        } else {
+            console.log('nothing')
+        }
+      
         // gọi lại cho người dùng nhập
         input = prompt(message);
     } else if (input.toLocaleUpperCase() === "D") {
@@ -29,7 +35,12 @@ while (true) {
         input = prompt(message);
     } else if (input.toLocaleUpperCase() === 'E') {
         alert('Exit'); // sau khi nhấn e sẽ exit; nếu muốn thực hiện các chức năng kia thì reload trang lại
-        break; // kết thúc vòng while
+         break; // kết thúc vòng while
+    }
+    else {
+        console.log('ko co ki tu muon nhap vao');
+         input = prompt(message);
+        break;
     }
 }
     
