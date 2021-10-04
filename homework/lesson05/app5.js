@@ -1,0 +1,64 @@
+// //1 Gaming
+
+// inventory = {
+//     'gold': 500,
+//     'pouch': ['flint', 'twine', 'gemstone'],
+//     'backpack': ['xylophone', 'danger', 'bedroll', 'bread loaf']
+// };
+
+// // thêm pocket
+// inventory["pocket"] = ["seashell", "strange berry", "lint"];
+// // console.log(inventory);
+
+// //delete danger
+// delete inventory['backpack'][1];
+// // console.log(inventory);
+ 
+// //add 50 gold;
+// inventory["gold"] += 50;
+// // console.log(inventory);
+
+// //delete all infomation about pouch.
+// inventory['pouch'] = []
+// console.log(inventory);
+
+
+// 4. Return the Objects Keys and Values
+// function keysAndValues(obj) {
+//     var Arr = []; 
+//     var ArrA = [];
+//     var ArrB=[];
+//     for (var i in obj) {
+//         ArrA.push(i)
+//         ArrB.push(obj[i]);
+//     }
+//     Arr.push(ArrA,ArrB)
+//     return Arr;
+// }
+// console.log(keysAndValues({ key1: true, key2: false, key3: undefined }))
+
+
+//3. International Greetings
+
+const GUEST_LIST = {
+  Randy: "Germany",
+  Karla: "France",
+  Wendy: "Japan",
+  Norman: "England",
+  Sam: "Argentina"
+}
+
+
+function greeting(name) {
+    for (var i in GUEST_LIST) {
+        if (name == i) {
+            console.log(`Hi! I'm ${name}, and I'm from ${GUEST_LIST[name]}.`);
+            break;
+        } 
+    };
+    
+}
+greeting("Karla");
+
+
+
