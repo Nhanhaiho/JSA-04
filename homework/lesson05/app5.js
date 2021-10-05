@@ -22,23 +22,26 @@
 // inventory['pouch'] = []
 // console.log(inventory);
 
+//2 Get Sum of People's Budget
 
-// 4. Return the Objects Keys and Values
-// function keysAndValues(obj) {
-//     var Arr = []; 
-//     var ArrA = [];
-//     var ArrB=[];
-//     for (var i in obj) {
-//         ArrA.push(i)
-//         ArrB.push(obj[i]);
-//     }
-//     Arr.push(ArrA,ArrB)
-//     return Arr;
+// function getBudgets(arr) {
+//   var sum = 0;
+//   for (var i of arr) {
+//     // console.log(i.budget);
+//     sum += i.budget;
+//   }
+//   return sum;
+    
 // }
-// console.log(keysAndValues({ key1: true, key2: false, key3: undefined }))
+// console.log(getBudgets([
+//   { name: "John",  age: 21, budget: 29000 },
+//   { name: "Steve",  age: 32, budget: 32000 },
+//   { name: "Martin",  age: 16, budget: 1600 }
+// ])
+// );
 
 
-//3. International Greetings
+// 3. International Greetings
 
 // const GUEST_LIST = {
 //   Randy: "Germany",
@@ -60,23 +63,20 @@
 // }
 // greeting("Karla");
 
-//2 Get Sum of People's Budget
 
-// function getBudgets(arr) {
-//   var sum = 0;
-//   for (var i of arr) {
-//     // console.log(i.budget);
-//     sum += i.budget;
-//   }
-//   return sum;
-    
+// 4. Return the Objects Keys and Values
+// function keysAndValues(obj) {
+//     var Arr = []; 
+//     var ArrA = [];
+//     var ArrB=[];
+//     for (var i in obj) {
+//         ArrA.push(i)
+//         ArrB.push(obj[i]);
+//     }
+//     Arr.push(ArrA,ArrB)
+//     return Arr;
 // }
-// console.log(getBudgets([
-//   { name: "John",  age: 21, budget: 29000 },
-//   { name: "Steve",  age: 32, budget: 32000 },
-//   { name: "Martin",  age: 16, budget: 1600 }
-// ])
-// )
+// console.log(keysAndValues({ key1: true, key2: false, key3: undefined }))
 
 
 //5 Printer Levels
