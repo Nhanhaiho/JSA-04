@@ -40,25 +40,60 @@
 
 //3. International Greetings
 
-const GUEST_LIST = {
-  Randy: "Germany",
-  Karla: "France",
-  Wendy: "Japan",
-  Norman: "England",
-  Sam: "Argentina"
-}
+// const GUEST_LIST = {
+//   Randy: "Germany",
+//   Karla: "France",
+//   Wendy: "Japan",
+//   Norman: "England",
+//   Sam: "Argentina"
+// }
 
 
-function greeting(name) {
-    for (var i in GUEST_LIST) {
-        if (name == i) {
-            console.log(`Hi! I'm ${name}, and I'm from ${GUEST_LIST[name]}.`);
-            break;
-        } 
-    };
+// function greeting(name) {
+//     for (var i in GUEST_LIST) {
+//         if (name == i) {
+//             console.log(`Hi! I'm ${name}, and I'm from ${GUEST_LIST[name]}.`);
+//             break;
+//         } 
+//     };
     
-}
-greeting("Karla");
+// }
+// greeting("Karla");
 
+//2 Get Sum of People's Budget
+
+// function getBudgets(arr) {
+//   var sum = 0;
+//   for (var i of arr) {
+//     // console.log(i.budget);
+//     sum += i.budget;
+//   }
+//   return sum;
+    
+// }
+// console.log(getBudgets([
+//   { name: "John",  age: 21, budget: 29000 },
+//   { name: "Steve",  age: 32, budget: 32000 },
+//   { name: "Martin",  age: 16, budget: 1600 }
+// ])
+// )
+
+
+//5 Printer Levels
+// function inkLevels(obj) {
+//   var newArr = [];
+//   // var min = 1;
+//   // var n = newArr.length;
+//   for (var i in obj) {
+//     newArr.push(obj[i]);
+//   };
+//   return Math.min(...newArr);
+// }
+
+// console.log(inkLevels({
+//   "cyan": 432,
+//   "magenta": 543,
+//   "yellow": 777
+// }))
 
 
