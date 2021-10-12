@@ -13,9 +13,11 @@
 // })
 
 
-//2 Diff Two Arrays
+// 2 Diff Two Arrays
 // function diffArray(arr1, arr2) {
-//     return arr1.concat(arr2).filter(diffnum => !arr1.includes(diffnum) || !arr2.includes(diffnum));
+//     const twoArr = arr1.concat(arr2);
+//     return twoArr.filter(diffNum => !arr1.includes(diffNum)|| !arr2.includes(diffNum))
+    
 // }
 
 // console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
@@ -58,3 +60,15 @@
 
 
 //5 suy nghĩ thôi khó vl =(((
+
+// const rate = {
+// 	people: 4,
+// 	 walls: 9,
+// 	 minutes: 63 
+// }
+// let formula = (rate.minutes / rate.walls) * rate.people; // tính 1 người mất bao nhiêu phút để xong được 1 wall;
+
+// function time(formula, people, walls) {
+//     return (walls * formula) / people; // tính theo yêu cầu đề 
+// }
+// console.log(time(formula,14,14)) //formula không thay đổi chỉ thay đổi people và walls
