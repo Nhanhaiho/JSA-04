@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 82px;
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+svg {
+  width: 20px;
+  height: 33px;
+}
+ul {
+  display: flex;
+  text-decoration: none;
+}
+li {
+  list-style: none;
+  font-weight: bold;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.inside-header {
+  display: flex;
+  align-items: center;
+}
+ul {
+  margin-left: 16px;
+}
+.logo-right {
+  display: flex;
+  align-items: center;
+}
+.money {
+  margin-left: 10px;
+}
+/* xong phần header */;
