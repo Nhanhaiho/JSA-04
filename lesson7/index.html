@@ -5,13 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link id="color-skin" rel="stylesheet" href="./style-1.css" />
   </head>
-  <body>
-    <div id="contain">
-      <!-- <h2 id="title" class="text-red bg-yellow font-bold">H2 Element</h2>
-      <h3 id="title" class="text-red bg-yellow font-bold">H3 Element</h3>
-      <h4 id="title" class="text-red bg-yellow font-bold">H4 Element</h4> -->
-      <h5>hello</h5>
+  <body
+    style="
+      background-image: url('https://i.pinimg.com/originals/86/df/73/86df730f8056dced1ca28d04e87c4d24.jpg');
+    "
+  >
+    <div class="container">
+      <h1>javascript dom</h1>
+      <div id="demo">ID demo</div>
+      <div class="demo" data-title="test1">class demo</div>
+      <div class="demo" data-title="test2">class demo</div>
+      <div class="demo">class demo</div>
+      <div class="demo">class demo</div>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita
+        illum aliquam dolores, provident doloribus quae sint enim eligendi.
+        Tenetur nisi animi veniam unde fugit deserunt pariatur soluta possimus
+        quia!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita
+        illum aliquam dolores, provident doloribus quae sint enim eligendi.
+        Tenetur nisi animi veniam unde fugit deserunt pariatur soluta possimus
+        quia!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita
+        illum aliquam dolores, provident doloribus quae sint enim eligendi.
+        Tenetur nisi animi veniam unde fugit deserunt pariatur soluta possimus
+        quia!
+      </p>
+      <button
+        onclick="changeStyleColor('./style-1.css')"
+        style="background-color: #35ce97; color: #fff; border-color: #35ce97"
+        data-toggle="modal" 
+      >
+        Click me bro
+      </button>
+      <button
+        onclick="changeStyleColor('./style-2.css')"
+        style="background-color: red; color: #fff; border-color: red"
+        data-toggle="modal"
+      >
+        Click me bro
+      </button>
+
+      <button
+        onclick="changeStyleColor('./style-3.css')"
+        style="background-color: blue; color: #fff; border-color: blue"
+        data-toggle="modal"
+      >
+        Click me bro
+      </button>
+      <br />
+
+      <button
+        onclick="changeStyleCotaniner('wide')"
+        style="background-color: yellow; color: #fff; border-color: yellow"
+        data-toggle="modal"
+      >
+        WIDE
+      </button>
+
+      <button
+        onclick="changeStyleCotaniner('box')"
+        style="background-color: yellow; color: #fff; border-color: yellow"
+        data-toggle="modal"
+      >
+        BOX
+      </button>
+
+      <button onclick="changeBg('https://i.pinimg.com/originals/86/df/73/86df730f8056dced1ca28d04e87c4d24.jpg')" data-toggle="modal"></button>
+      <img src="" alt="" class="pic" />
     </div>
   </body>
   <script src="./app.js"></script>

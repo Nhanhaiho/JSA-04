@@ -1,43 +1,55 @@
 //1
-// const members = [
-// { name: 'Lan', gender: 'female' },
-// { name: 'Linh', gender: 'female' },
-// { name: 'Trung', gender: 'male' },
-// { name: 'Peter', gender: 'gay' }
-//  ];
 
 // members.forEach((peoples) => {
 //     if (peoples.gender != 'female') {
 //         console.log(peoples)
 //     }
 // })
-
+// dùng filter hợp lí hơn
+// function filterOutFemales(members) {
+//     let result = members.filter(member => member.gender !== 'female');
+//     console.log(result)
+// }
+// filterOutFemales([
+//     { name: 'Lan', gender: 'female' },
+//     { name: 'Linh', gender: 'female' },
+//     { name: 'Trung', gender: 'male' },
+//     { name: 'Peter', gender: 'gay' }
+// ]);
 
 // 2 Diff Two Arrays
 // function diffArray(arr1, arr2) {
-//     const twoArr = arr1.concat(arr2);
-//     return twoArr.filter(diffNum => !arr1.includes(diffNum)|| !arr2.includes(diffNum))
-    
-// }
+//     // const twoArr = arr1.concat(arr2);
+//     // return twoArr.filter(diffNum => !arr1.includes(diffNum)|| !arr2.includes(diffNum))
+//     let newArr = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         newArr.push(arr1[i]);
+//     }
+//     for (var j = 0; j < arr2.length; j++) {
+//         newArr.push(arr2[j]);
+//     }
+//     console.log(newArr);
+// console.log(newArr.filter(diffNum => !arr1.includes(diffNum)|| !arr2.includes(diffNum)))
+// };
 
-// console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]));
+// diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
 
 
 //3. Sum of Minimums
-// function sumMinimums(arr) {
-//     var sum = 0;
-//     for (var i of arr) {
-//         sum += Math.min(...i);
-//     }
-//     console.log(sum);
+function sumMinimums(arr) {
+    var sum = 0;
+    for (var i of arr) {
+        sum += Math.min(...i);
+    }
+    console.log(sum);
 
-// }
+}
 
-// sumMinimums([
-//     [1, 2, 3, 4, 5],
-//     [5, 6, 7, 8, 9],
-//     [20, 21, 34, 56, 100]
-// ]);
+sumMinimums([
+    [1, 2, 3, 4, 5],
+    [5, 6, 7, 8, 9],
+    [20, 21, 34, 56, 100]
+]);
 
 
 //4 
