@@ -71,9 +71,14 @@ li{
   border-radius:4px;
   background:#f9f9f9;
   border:2px solid gray;
+  cursor: pointer;
   
 }
-.fa-trash{
- font-size:18px;
- margin-left: auto;
- }
+li button .fa-trash{
+  font-size:18px;
+
+}
+li button {
+   background:#f9f9f9;
+   margin-left: auto;
+}
