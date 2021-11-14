@@ -3,28 +3,6 @@ var inputEl = document.getElementById('input');
 var ulEl = document.querySelector('ul');
 
 
-// const liEl = document.createElement('li');
-// const iconEl = document.createElement('i');
-// iconEl.setAttribute("class", "fas fa-trash");
-// liEl.appendChild(iconEl);
-//     ulEl.appendChild(liEl);
-//     liEl.innerHTML(inputEl.value);
-// function newLi() {
-//     var li = document.createElement('li');
-    
-// }
-
-// btnaddEl.addEventListener('click', () => {
-//     ulEl.textContent = 'nhan'
-// })
-
-// const todoUl = []
-
-// for (let i=0; i < 5; i++){
-    
-// }
-
-
 btnaddEl.addEventListener('click', function () {
     // var btnTrash = document.createElement('button');
     // console.log(btnTrash);
@@ -44,29 +22,6 @@ btnaddEl.addEventListener('click', function () {
          ulEl.removeChild(liform);
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // btnaddEl.onclick = () => {
