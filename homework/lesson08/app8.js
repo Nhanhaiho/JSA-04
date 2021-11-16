@@ -23,6 +23,15 @@ btnaddEl.addEventListener('click', function () {
     })
 })
 
+const todos = [
+  { title: "Ăn tối", isDone: false, id: 1 },
+  { title: "Học bài", isDone: false, id: 2 },
+  { title: "Đi ngủ", isDone: true, id: 3 },
+];
+
+for (var i = 0; i < todos.length; i++){
+    console.log(todos[i]);
+}
 
 // btnaddEl.onclick = () => {
 //     let userData = inputEl.value;
@@ -50,3 +59,8 @@ btnaddEl.addEventListener('click', function () {
 //     })
 //     ulEl.innerHTML = newLi;
 // }
+
+
+
+
+

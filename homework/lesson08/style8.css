@@ -4,61 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: cyan;
-  margin: 0;
- 
-}
-
 .container {
-  width: 400px;
-  height: 500px;
-  background-color:white;
-  border-radius: 5px;
-  position: fixed; /* or absolute */
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
-  padding:20px;
-}
-h1{
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.input-form{
-  width:90%;
-  height:50px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.input-form input {
-  height: 95%;
-  width:85% ;
-    border:1px solid #ccc;
-  border-radius:4px;
-  outline: none;
-  font-size:17px;
-  padding-left: 15px;
-  
-}
-.input-form button{
-  height:100%;
-  width: 13%;
-  outline: none;
-  color:#fff;
-  font-size:21px;
-  border-radius: 4px;
-  border:1px solid #ccc;
-   background: #8E49E8;
-  cursor: pointer;
-}
-
-ul{
-  list-style: none;
+top:50% ;
+left:50%;
+transform: translate(-50%, -50%);
 }
 
 li{
@@ -72,12 +21,8 @@ li{
   background:#f9f9f9;
   border:2px solid gray;
   cursor: pointer;
-  
 }
-li button .fa-trash{
-  font-size:18px;
 
-}
 li button {
    background:#f9f9f9;
    margin-left: auto;
