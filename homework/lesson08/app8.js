@@ -4,13 +4,6 @@ var ulEl = document.querySelector('ul');
 
 
 btnaddEl.addEventListener('click', function () {
-    // var btnTrash = document.createElement('button');
-    // console.log(btnTrash);
-    // var iTrash = document.createElement('i')
-    // iTrash.setAttribute("class", "fas fa-trash")
-    // btnTrash.appendChild(iTrash);
-    
-    //////////////////////////////////////////////
     var liform = document.createElement('li');
     
     liform.innerHTML = input.value;
@@ -33,32 +26,6 @@ for (var i = 0; i < todos.length; i++){
     console.log(todos[i]);
 }
 
-// btnaddEl.onclick = () => {
-//     let userData = inputEl.value;
-//     let getlocalStorage = localStorage.getItem('new todo')
-//     if (getlocalStorage == null) {
-//         listArr = [];
-//     } else {
-//         listArr =JSON.parse(getlocalStorage)
-//     }
-//     listArr.push(userData);
-//     localStorage.setItem('new todo', JSON.stringify(listArr));
-//     lists()
-// }
-
-// function lists() {
-//     let getlocalStorage = localStorage.getItem('new todo');
-//      if (getlocalStorage == null) {
-//         listArr = [];
-//     } else {
-//         listArr =JSON.parse(getlocalStorage)
-//     }
-//     let newLi = '';
-//     listArr.forEach((element, index) => {
-//         newLi += `<li> ${element}<i class="fas fa-trash"></i></li>`;
-//     })
-//     ulEl.innerHTML = newLi;
-// }
 
 
 
