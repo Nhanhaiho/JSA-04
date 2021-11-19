@@ -23,10 +23,6 @@ li{
   cursor: pointer;
 }
 
-li button {
-   background:#f9f9f9;
-   margin-left: auto;
-}
 
 .done{
   text-decoration: line-through;
