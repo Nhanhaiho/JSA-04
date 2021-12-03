@@ -11,7 +11,7 @@ export function getUserFromLocalStorage() {
 }
 
 function generatorMessageElement(msg, senderId) {
-  console.log(senderId)
+  // console.log(senderId)
     return `
     <li class="flex  mb-4 ${msg.senderId===senderId && 'justify-end'} items-center">
         <div class="mr-2">
@@ -26,13 +26,10 @@ function generatorMessageElement(msg, senderId) {
   }
 
   
-  
-
-
-export function renderMessages(messages, container,senderId) {
+  export function renderMessages(messages, container,senderId) {
   let messageHtml = "";
   for (let msg of messages) {
     messageHtml +=  generatorMessageElement(msg,senderId);
   }
-  container.innerHTML = messageHtml;
+  container.insertAdjacentHTML('afterbegin',messageHtml);
 }

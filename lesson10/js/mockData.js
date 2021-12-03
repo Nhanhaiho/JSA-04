@@ -2,10 +2,10 @@ export const mockData = [
   {
     id: "1ababfhahfha",
     avatar:
-      "https://lh3.googleusercontent.com/a/AATXAJyJ7VBNmYCTKh6bVmupW8hVRMh07ck7AB_-Lhs-=s96-c",
+      "https://lh3.googleusercontent.com/a-/AOh14GjpxZzrL0ADCpLdw-sPNXCY89Tv3HnJBUmZJTknvQ=s96-c",
     content: "Hello An",
     createdAt: new Date().valueOf(),
-    senderId: "jIehX38UayMdnTOz8FHpsz4Az9K2",
+    senderId: "jk5MId2gDUfRzVIbue8p5bEf98t2",
   },
   {
     id: "fhahfhababfhahfha",
@@ -18,8 +18,8 @@ export const mockData = [
   {
     id: "bfhahfha1ababfhahfha",
     avatar:
-      "https://lh3.googleusercontent.com/a/AATXAJyJ7VBNmYCTKh6bVmupW8hVRMh07ck7AB_-Lhs-=s96-c",
-    content: "Làm bài tập chưa",
+      "https://lh3.googleusercontent.com/a-/AOh14GjpxZzrL0ADCpLdw-sPNXCY89Tv3HnJBUmZJTknvQ=s96-c",
+    content: "aydo ae",
     createdAt: new Date().valueOf(),
     senderId: "jk5MId2gDUfRzVIbue8p5bEf98t2",
   },

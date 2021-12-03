@@ -5,7 +5,7 @@ import {
   onAuthStateChanged,
 } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-auth.js";
 
-import { saveUserToLocalStorage, getUserFromLocalStorage } from "./helper.js"
+import { saveUserToLocalStorage } from "./helper.js"
 
 const logInGoogleAccountButton = document.getElementById('btn')
 const auth = getAuth();
@@ -20,7 +20,7 @@ function signInGoogleAccount() {
       const user = result.user;
       console.log(user);
       saveUserToLocalStorage(user)
-      window.location.href=(`./chat.html?uid=${user.uid}`)
+      window.location.href=(`./chat.html?uid`)
   }).catch((error) => {
     const errorCode = error.code;
     const errorMessage = error.message;
@@ -35,7 +35,7 @@ function onAuthenticationListener(user) {
   console.log(user);
   if (user) {
     console.log('login')
-     window.location.href=(`./chat.html?uid=${user.uid}`) 
+     window.location.href=(`./chat.html?uid`) 
   }
 }
 
